@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as c,a}from"./CYeUd52w.js";const n={},r={class:"footer-container"};function s(_,o){return c(),t("div",r,[...o[0]||(o[0]=[a("div",{class:"footer-content"}," © 2025 - Proyecto académico - Andrea Carrillo ",-1)])])}const i=e(n,[["render",s],["__scopeId","data-v-92cab66b"]]);export{i as default};
