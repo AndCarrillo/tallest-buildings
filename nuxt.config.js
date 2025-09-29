@@ -34,21 +34,10 @@ export default defineNuxtConfig({
     },
   },
 
-  // Configuración para Netlify - Generación Estática
-  ssr: false,
-  target: "static",
-
   // Configuración de Nitro para pre-renderizado optimizado
   nitro: {
     prerender: {
       crawlLinks: true,
-      routes: [
-        "/",
-        "/buildings_index",
-        "/cities_index",
-        "/architects_index",
-        "/buildings_json",
-      ],
     },
   },
 

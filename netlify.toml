@@ -8,9 +8,6 @@
 [build.environment]
   # Versión de Node.js para Netlify
   NODE_VERSION = "18"
-  
-  # Variables de entorno para la construcción
-  NPM_FLAGS = "--prefix=/dev/null"
 
 # Configuración para el pre-renderizado de Nuxt
 [[headers]]
