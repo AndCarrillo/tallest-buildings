@@ -19,14 +19,3 @@ Conocida como "La Gran Manzana" y "la ciudad que nunca duerme", Nueva York es ho
 ## Arquitectura Icónica
 
 El skyline de Manhattan es uno de los más reconocibles del mundo, con edificios icónicos como el Empire State Building, el One World Trade Center y el futuro Central Park Tower.
-
-## Arquitectos Destacados
-
-### [Skidmore, Owings & Merrill](/architects-md/arq_01)
-
-SOM ha dejado una huella imborrable en el skyline neoyorquino con el diseño del **One World Trade Center (Freedom Tower)**, un símbolo de resiliencia y renacimiento que representa la fortaleza de la ciudad tras los eventos del 11 de septiembre.
-
-## Arquitectos Destacados
-
-### [Skidmore, Owings & Merrill](/architects-md/arq_01)
-**1 edificio:** [One World Trade Center](/buildings-md/one-world-trade-center) (541m)
