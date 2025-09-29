@@ -1,22 +1,22 @@
-# Tallest Buildings Catalog
+# 🏗️ Tallest Buildings Catalog
 
-Aplicación web moderna construida con **Nuxt.js 3** que presenta un catálogo interactivo de los 12 rascacielos más altos del mundo, implementando navegación cruzada entre edificios, ciudades y firmas arquitectónicas.
+Aplicación web moderna construida con **Nuxt.js 3** que presenta un catálogo interactivo de los rascacielos más altos del mundo, implementando navegación cruzada entre edificios, ciudades y firmas arquitectónicas.
 
 ![Nuxt.js](https://img.shields.io/badge/Nuxt.js-3.12.4-00C58E.svg?style=flat&logo=nuxtdotjs)
 ![Vue.js](https://img.shields.io/badge/Vue.js-3-4FC08D.svg?style=flat&logo=vuedotjs)
 ![Build Status](https://img.shields.io/badge/Build-Passing-brightgreen.svg)
 ![Deployment](https://img.shields.io/badge/Deployment-Netlify-00C7B7.svg)
+![License](https://img.shields.io/badge/License-MIT-blue.svg)
 
-## Características
+## 🌆 Características
 
-- **� Diseño Responsivo:** Optimizado para escritorio y móviles
+- **📱 Diseño Responsivo:** Optimizado para escritorio y móviles
 - **🎨 Tema Ecológico:** Paleta de colores armoniosa con verdes y tonos naturales
-- **🏢 Catálogo Completo:** 12 rascacielos, 11 ciudades, 6 firmas de arquitectura
 - **🔍 Navegación Intuitiva:** Enlaces cruzados entre edificios, ciudades y arquitectos
-- **� Datos Estructurados:** Información detallada en formato JSON
+- **📊 Datos Estructurados:** Información detallada en formato JSON
 - **⚡ Renderizado Híbrido:** SSG/SSR con Nuxt.js 3
 
-## Arquitectura del Proyecto
+## 🏗️ Arquitectura del Proyecto
 
 ```
 proyecto-edificios/
@@ -40,7 +40,7 @@ proyecto-edificios/
 └── nuxt.config.ts        # Configuración de Nuxt.js
 ```
 
-## 🚀 Instalación y Desarrollo
+## 🚀 Instalación y desarrollo
 
 ```bash
 # Clonar e instalar
@@ -63,7 +63,7 @@ npm run preview      # Vista previa
 
 ---
 
-## Diseño y UX
+## 🎨 Diseño y UX
 
 - **Paleta Ecológica:** Forest Green, Sage Green, Stone Gray
 - **Tipografía:** Raleway para legibilidad óptima
@@ -74,11 +74,18 @@ npm run preview      # Vista previa
 
 ---
 
-## 🖼️ Vista Previa de la Aplicación
-**Demo Live**: [Netlify Deploy](https://tallestbuildings.netlify.app/)
+## 🔗 Enlaces
+
+**Demo live**: [Catalogo de edificios mas altos del mundo](https://tallestbuildings.netlify.app/)
+
+## 🖼️ Vista previa de la aplicación
+
 ![Tallest Buildings App Screenshot](./public/images/app-screenshot.png)
+_Captura de pantalla de la aplicación mostrando el home_
 
 ## 📄 Licencia
+
+Este proyecto está licenciado bajo la Licencia MIT - consulta el archivo [LICENSE](LICENSE) para más detalles.
 
 Proyecto académico - © 2025 Andrea Carrillo
 
