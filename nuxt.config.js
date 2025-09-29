@@ -1,6 +1,6 @@
 export default defineNuxtConfig({
   // Módulos de Nuxt
-  modules: ["@nuxt/content"],
+  modules: ["@nuxt/content", "@nuxt/image"],
 
   // Configuración de la aplicación
   app: {
