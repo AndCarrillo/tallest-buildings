@@ -16,7 +16,7 @@ Aplicación web moderna construida con **Nuxt.js 3** que presenta un catálogo i
 - **📊 Datos Estructurados:** Información detallada en formato JSON
 - **⚡ Renderizado Híbrido:** SSG/SSR con Nuxt.js 3
 
-## 🏗️ Arquitectura del Proyecto
+## 🏗️ Arquitectura del proyecto
 
 ```
 proyecto-edificios/
@@ -54,7 +54,7 @@ npm run build        # Build producción
 npm run preview      # Vista previa
 ```
 
-### Rutas Principales
+### Rutas principales
 
 - **`/`** - Landing page minimalista
 - **`/buildings_json`** - Catálogo completo de edificios
