@@ -1,21 +1,22 @@
 # 🏗️ Tallest Buildings Catalog
 
-Una aplicación web moderna construida con **Nuxt.js 3** que presenta los 12 rascacielos más altos del mundo, sus ciudades y las firmas de arquitectura que los crearon.
+Aplicación web moderna construida con **Nuxt.js 3** que presenta un catálogo interactivo de los 12 rascacielos más altos del mundo, implementando navegación cruzada entre edificios, ciudades y firmas arquitectónicas.
 
 ![Nuxt.js](https://img.shields.io/badge/Nuxt.js-3.12.4-00C58E.svg?style=flat&logo=nuxtdotjs)
 ![Vue.js](https://img.shields.io/badge/Vue.js-3-4FC08D.svg?style=flat&logo=vuedotjs)
-![License](https://img.shields.io/badge/License-Academic-blue.svg)
+![Build Status](https://img.shields.io/badge/Build-Passing-brightgreen.svg)
+![Deployment](https://img.shields.io/badge/Deployment-Netlify-00C7B7.svg)
 
-## 🌆 Características
+## � Características
 
-- **📱 Diseño Responsivo:** Optimizado para escritorio y móviles
+- **� Diseño Responsivo:** Optimizado para escritorio y móviles
 - **🎨 Tema Ecológico:** Paleta de colores armoniosa con verdes y tonos naturales
 - **🏢 Catálogo Completo:** 12 rascacielos, 11 ciudades, 6 firmas de arquitectura
 - **🔍 Navegación Intuitiva:** Enlaces cruzados entre edificios, ciudades y arquitectos
-- **📊 Datos Estructurados:** Información detallada en formato JSON
+- **� Datos Estructurados:** Información detallada en formato JSON
 - **⚡ Renderizado Híbrido:** SSG/SSR con Nuxt.js 3
 
-## 🏗️ Arquitectura del Proyecto
+## �️ Arquitectura del Proyecto
 
 ```
 proyecto-edificios/
@@ -39,91 +40,45 @@ proyecto-edificios/
 └── nuxt.config.ts        # Configuración de Nuxt.js
 ```
 
-## 🏢 Datos Incluidos
+## 🚀 Instalación y Desarrollo
 
-### Rascacielos (Top 12 Mundial)
+```bash
+# Clonar e instalar
+git clone https://github.com/AndCarrillo/tallest-buildings.git
+cd tallest-buildings
+npm install
 
-1. **Burj Khalifa** (828m) - Dubái, EAU
-2. **Merdeka 118** (679m) - Kuala Lumpur, Malasia
-3. **Shanghai Tower** (632m) - Shanghái, China
-4. **Makkah Royal Clock Tower** (601m) - La Meca, Arabia Saudí
-5. **Ping An Finance Center** (599m) - Shenzhen, China
-6. **Lotte World Tower** (555m) - Seúl, Corea del Sur
-7. **One World Trade Center** (541m) - Nueva York, EE.UU.
-8. **Guangzhou CTF Finance Centre** (530m) - Cantón, China
-9. **Tianjin CTF Finance Centre** (530m) - Tianjin, China
-10. **CITIC Tower** (528m) - Pekín, China
-11. **TAIPEI 101** (508m) - Taipéi, Taiwán
-12. **Shanghai World Financial Center** (492m) - Shanghái, China
+# Desarrollo
+npm run dev          # Servidor local
+npm run build        # Build producción
+npm run preview      # Vista previa
+```
 
-### Firmas de Arquitectura
+### Rutas Principales
 
-- **Skidmore, Owings & Merrill** - Chicago, EE.UU.
-- **Kohn Pedersen Fox** - Nueva York, EE.UU.
-- **Fender Katsalidis Architects** - Melbourne, Australia
-- **Dar al-Handasah + SL Rasch** - Beirut, Líbano / Stuttgart, Alemania
-- **Gensler** - San Francisco, EE.UU.
-- **C.Y. Lee & Partners** - Taipéi, Taiwán
+- **`/`** - Landing page minimalista
+- **`/buildings_json`** - Catálogo completo de edificios
+- **`/cities-md/[slug]`** - Perfiles de ciudades con relaciones
+- **`/architects-md/[slug]`** - Portafolios de firmas arquitectónicas
 
-## 🎨 Diseño y UX
+---
+
+## Diseño y UX
 
 - **Paleta Ecológica:** Forest Green, Sage Green, Stone Gray
 - **Tipografía:** Raleway para legibilidad óptima
 - **Layout:** Grid responsivo con Skeleton CSS
 - **Navegación:** Enlaces cruzados inteligentes
-- **Hero Section:** Imagen principal con overlay de gradiente
+- **Hero Section:** Banner principal con overlay de gradiente
 - **Estadísticas:** Resumen visual en la página principal
 
-## 🚀 Instalación y Uso
+---
 
-```bash
-# Clonar repositorio
-git clone https://github.com/AndCarrillo/tallest-buildings.git
-cd tallest-buildings
+## 🖼️ Vista Previa de la Aplicación
 
-# Instalar dependencias
-npm install
+![Tallest Buildings App Screenshot](./public/images/app-screenshot.png)
 
-# Servidor de desarrollo
-npm run dev
-
-# Build para producción
-npm run build
-
-# Vista previa del build
-npm run preview
-```
-
-## 📱 Rutas Principales
-
-- `/` - Página principal con hero y estadísticas
-- `/buildings_json` - Listado completo de edificios (JSON)
-- `/buildings_json/[num]` - Detalles de edificio específico
-- `/cities_index` - Listado de ciudades
-- `/cities-md/[slug]` - Detalles de ciudad con edificios y arquitectos
-- `/architects_index` - Listado de firmas de arquitectura
-- `/architects-md/[slug]` - Perfil de firma arquitectónica
-
-## 🛠️ Tecnologías Utilizadas
-
-- **Frontend:** Nuxt.js 3.12.4, Vue.js 3
-- **Contenido:** Nuxt Content (Markdown + JSON)
-- **Estilos:** CSS Variables, Skeleton Framework
-- **Optimización:** SSG, Tree Shaking, Code Splitting
-- **Control de Versiones:** Git, GitHub
-
-## 📈 Optimizaciones Implementadas
-
-- ✅ **Diseño minimalista** en página principal sin scroll
-- ✅ **Navegación cruzada** entre edificios ↔ ciudades ↔ arquitectos
-- ✅ **Mapeo corregido** de arquitectos en páginas de ciudades
-- ✅ **Paleta de colores armonizada** en toda la aplicación
-- ✅ **Componentes responsive** para todos los dispositivos
-- ✅ **Footer armonizado** con el header y tema general
-
-## 🤝 Contribuciones
-
-Este es un proyecto académico desarrollado por **Andrea Carrillo** como parte de estudios de desarrollo web con Nuxt.js.
+**Demo Live**: [Netlify Deploy](https://tallestbuildings.netlify.app/)
 
 ## 📄 Licencia
 
