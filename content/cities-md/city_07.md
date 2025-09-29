@@ -28,5 +28,5 @@ SOM ha dejado una huella imborrable en el skyline neoyorquino con el diseño del
 
 ## Arquitectos Destacados
 
-### [Skidmore, Owings & Merrill](../arquitectos-md/arq_01)
-**1 edificio:** [One World Trade Center](../edificios-md/one-world-trade-center) (541m)
+### [Skidmore, Owings & Merrill](/architects-md/arq_01)
+**1 edificio:** [One World Trade Center](/buildings-md/one-world-trade-center) (541m)
