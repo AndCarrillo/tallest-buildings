@@ -1,0 +1,46 @@
+[build]
+  # Comando para construir el proyecto
+  command = "npm run generate"
+  
+  # Directorio donde se genera el sitio estático
+  publish = ".output/public"
+
+[build.environment]
+  # Versión de Node.js para Netlify
+  NODE_VERSION = "18"
+  
+  # Variables de entorno para la construcción
+  NPM_FLAGS = "--prefix=/dev/null"
+
+# Configuración para el pre-renderizado de Nuxt
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+# Configuración para archivos estáticos con caché
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000"
+
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000"
+
+# Redireccionamientos para mejor SEO
+[[redirects]]
+  from = "/index.html"
+  to = "/"
+  status = 301
+  force = true
+
+# Configuración para SPA fallback si es necesario
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404

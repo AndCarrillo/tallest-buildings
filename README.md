@@ -42,8 +42,9 @@ proyecto-edificios/
 ## 🏢 Datos Incluidos
 
 ### Rascacielos (Top 12 Mundial)
+
 1. **Burj Khalifa** (828m) - Dubái, EAU
-2. **Merdeka 118** (679m) - Kuala Lumpur, Malasia  
+2. **Merdeka 118** (679m) - Kuala Lumpur, Malasia
 3. **Shanghai Tower** (632m) - Shanghái, China
 4. **Makkah Royal Clock Tower** (601m) - La Meca, Arabia Saudí
 5. **Ping An Finance Center** (599m) - Shenzhen, China
@@ -56,6 +57,7 @@ proyecto-edificios/
 12. **Shanghai World Financial Center** (492m) - Shanghái, China
 
 ### Firmas de Arquitectura
+
 - **Skidmore, Owings & Merrill** - Chicago, EE.UU.
 - **Kohn Pedersen Fox** - Nueva York, EE.UU.
 - **Fender Katsalidis Architects** - Melbourne, Australia
@@ -113,7 +115,7 @@ npm run preview
 ## 📈 Optimizaciones Implementadas
 
 - ✅ **Diseño minimalista** en página principal sin scroll
-- ✅ **Navegación cruzada** entre edificios ↔ ciudades ↔ arquitectos  
+- ✅ **Navegación cruzada** entre edificios ↔ ciudades ↔ arquitectos
 - ✅ **Mapeo corregido** de arquitectos en páginas de ciudades
 - ✅ **Paleta de colores armonizada** en toda la aplicación
 - ✅ **Componentes responsive** para todos los dispositivos

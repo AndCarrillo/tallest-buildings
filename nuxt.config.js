@@ -30,42 +30,39 @@ export default defineNuxtConfig({
         { rel: "stylesheet", href: "/css/normalize.css" },
         { rel: "stylesheet", href: "/css/skeleton.css" },
         { rel: "icon", type: "image/png", href: "/icons/favicon.png" },
-        { rel: "canonical", href: "https://tu-dominio.com" }, // Actualizar con tu dominio
       ],
     },
   },
 
-  // Configuración de CSS global
-  css: [
-    // Aquí puedes agregar archivos CSS globales si necesitas
-    // '~/assets/css/global.css'
-  ],
+  // Configuración para Netlify - Generación Estática
+  ssr: false,
+  target: "static",
 
-  // Configuración de Nitro para pre-renderizado
+  // Configuración de Nitro para pre-renderizado optimizado
   nitro: {
     prerender: {
       crawlLinks: true,
-      routes: ["/sitemap.xml"], // Opcional: pre-renderizar sitemap
+      routes: [
+        "/",
+        "/buildings_index",
+        "/cities_index",
+        "/architects_index",
+        "/buildings_json",
+      ],
     },
   },
 
   // Configuración de Nuxt Content
   content: {
-    // Configuraciones específicas del módulo content si necesitas
     highlight: {
-      // Configuración de resaltado de sintaxis
       theme: "github-light",
     },
   },
 
   // Variables de runtime (para producción)
   runtimeConfig: {
-    // Variables privadas (solo disponibles en el servidor)
-    // apiSecret: '123',
-
-    // Variables públicas (expuestas al cliente)
     public: {
-      // apiBase: '/api'
+      baseUrl: process.env.NUXT_PUBLIC_BASE_URL || "http://localhost:3000",
     },
   },
 
