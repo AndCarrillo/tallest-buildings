@@ -29,7 +29,7 @@ export default defineNuxtConfig({
         },
         { rel: "stylesheet", href: "/css/normalize.css" },
         { rel: "stylesheet", href: "/css/skeleton.css" },
-        { rel: "icon", type: "image/png", href: "/icons/favicon.png" },
+        { rel: "icon", type: "image/x-icon", href: "/icons/favicon.ico" },
       ],
     },
   },
