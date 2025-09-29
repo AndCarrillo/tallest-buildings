@@ -1,4 +1,4 @@
-# 🏗️ Tallest Buildings Catalog
+# Tallest Buildings Catalog
 
 Aplicación web moderna construida con **Nuxt.js 3** que presenta un catálogo interactivo de los 12 rascacielos más altos del mundo, implementando navegación cruzada entre edificios, ciudades y firmas arquitectónicas.
 
@@ -7,7 +7,7 @@ Aplicación web moderna construida con **Nuxt.js 3** que presenta un catálogo i
 ![Build Status](https://img.shields.io/badge/Build-Passing-brightgreen.svg)
 ![Deployment](https://img.shields.io/badge/Deployment-Netlify-00C7B7.svg)
 
-## � Características
+## Características
 
 - **� Diseño Responsivo:** Optimizado para escritorio y móviles
 - **🎨 Tema Ecológico:** Paleta de colores armoniosa con verdes y tonos naturales
@@ -16,7 +16,7 @@ Aplicación web moderna construida con **Nuxt.js 3** que presenta un catálogo i
 - **� Datos Estructurados:** Información detallada en formato JSON
 - **⚡ Renderizado Híbrido:** SSG/SSR con Nuxt.js 3
 
-## �️ Arquitectura del Proyecto
+## Arquitectura del Proyecto
 
 ```
 proyecto-edificios/
@@ -75,10 +75,8 @@ npm run preview      # Vista previa
 ---
 
 ## 🖼️ Vista Previa de la Aplicación
-
-![Tallest Buildings App Screenshot](./public/images/app-screenshot.png)
-
 **Demo Live**: [Netlify Deploy](https://tallestbuildings.netlify.app/)
+![Tallest Buildings App Screenshot](./public/images/app-screenshot.png)
 
 ## 📄 Licencia
 
