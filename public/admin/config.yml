@@ -1,0 +1,228 @@
+backend:
+  name: git-gateway
+  branch: main # Branch to update (optional; defaults to master)
+publish_mode: editorial_workflow
+media_folder: static/images
+public_folder: /images
+collections:
+  - name: "arquitectos"
+    label: "Arquitectos"
+    folder: "content/architects-md"
+    create: true
+    fields:
+      - {
+          label: "Id",
+          name: "id",
+          widget: "hidden",
+          default: "arquitecto_{{hour}}{{minute}}{{second}}",
+        }
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Nombre", name: "nombre", widget: "string" }
+      - { label: "Nacionalidad", name: "nacionalidad", widget: "string" }
+      - { label: "Año de Nacimiento", name: "birth_year", widget: "number" }
+      - {
+          label: "Especialidades",
+          name: "especialidades",
+          widget: "select",
+          multiple: true,
+          options:
+            [
+              "Rascacielos",
+              "Arquitectura Comercial",
+              "Arquitectura Residencial",
+              "Diseño Urbano",
+              "Arquitectura Sustentable",
+              "Ingeniería Estructural",
+            ],
+        }
+      - {
+          label: "Estudios Destacados",
+          name: "estudios",
+          widget: "string",
+          required: false,
+        }
+      - {
+          label: "Premios",
+          name: "premios",
+          widget: "list",
+          required: false,
+          fields:
+            [
+              { label: "Premio", name: "premio", widget: "string" },
+              { label: "Año", name: "año", widget: "number" },
+            ],
+        }
+      - {
+          label: "Imagen",
+          name: "image",
+          widget: "image",
+          media_folder: "/static/images/arquitectos",
+        }
+      - { label: "Biografía", name: "body", widget: "markdown" }
+
+  - name: "ciudades"
+    label: "Ciudades"
+    folder: "content/cities-md"
+    create: true
+    fields:
+      - {
+          label: "Id",
+          name: "id",
+          widget: "hidden",
+          default: "ciudad_{{hour}}{{minute}}{{second}}",
+        }
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Ciudad", name: "ciudad", widget: "string" }
+      - { label: "País", name: "pais", widget: "string" }
+      - {
+          label: "Continente",
+          name: "continente",
+          widget: "select",
+          options:
+            [
+              "Asia",
+              "América del Norte",
+              "América del Sur",
+              "Europa",
+              "África",
+              "Oceanía",
+            ],
+        }
+      - {
+          label: "Población",
+          name: "poblacion",
+          widget: "number",
+          required: false,
+        }
+      - {
+          label: "Área Metropolitana",
+          name: "area_metropolitana",
+          widget: "number",
+          required: false,
+        }
+      - { label: "Fundada", name: "fundada", widget: "number", required: false }
+      - {
+          label: "Características",
+          name: "caracteristicas",
+          widget: "select",
+          multiple: true,
+          options:
+            [
+              "Centro Financiero",
+              "Hub Tecnológico",
+              "Puerto Comercial",
+              "Ciudad Turística",
+              "Capital Nacional",
+              "Metrópoli",
+            ],
+        }
+      - {
+          label: "Imagen",
+          name: "image",
+          widget: "image",
+          media_folder: "/static/images/ciudades",
+        }
+      - { label: "Descripción", name: "body", widget: "markdown" }
+
+  - name: "edificios"
+    label: "Edificios"
+    folder: "content/buildings-md"
+    create: true
+    fields:
+      - {
+          label: "Id",
+          name: "id",
+          widget: "hidden",
+          default: "edificio_{{hour}}{{minute}}{{second}}",
+        }
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Nombre del Edificio", name: "nombre", widget: "string" }
+      - { label: "Altura (metros)", name: "altura_m", widget: "number" }
+      - { label: "Altura (pies)", name: "altura_ft", widget: "number" }
+      - { label: "Pisos", name: "pisos", widget: "number" }
+      - { label: "Año de Construcción", name: "year", widget: "number" }
+      - { label: "Ciudad", name: "city", widget: "string" }
+      - { label: "País", name: "pais", widget: "string" }
+      - {
+          label: "Uso Principal",
+          name: "uso",
+          widget: "select",
+          options:
+            [
+              "Oficinas",
+              "Mixto",
+              "Residencial",
+              "Hotel",
+              "Comercial",
+              "Observación",
+            ],
+        }
+      - {
+          label: "Estilo Arquitectónico",
+          name: "estilo",
+          widget: "select",
+          multiple: true,
+          options:
+            [
+              "Moderno",
+              "Postmoderno",
+              "Neo-futurista",
+              "High-tech",
+              "Minimalista",
+              "Art Deco",
+              "Internacional",
+            ],
+        }
+      - {
+          label: "Arquitecto Principal",
+          name: "arquitectoId",
+          widget: "relation",
+          collection: "arquitectos",
+          search_fields: ["nombre"],
+          value_field: "id",
+          display_fields: ["nombre"],
+          required: false,
+        }
+      - {
+          label: "Ciudad",
+          name: "ciudadId",
+          widget: "relation",
+          collection: "ciudades",
+          search_fields: ["ciudad"],
+          value_field: "id",
+          display_fields: ["ciudad"],
+          required: false,
+        }
+      - {
+          label: "Constructor/Desarrollador",
+          name: "constructor",
+          widget: "string",
+          required: false,
+        }
+      - {
+          label: "Costo de Construcción (USD)",
+          name: "costo_construccion",
+          widget: "string",
+          required: false,
+        }
+      - {
+          label: "Características Especiales",
+          name: "caracteristicas_especiales",
+          widget: "list",
+          required: false,
+          fields:
+            [
+              {
+                label: "Característica",
+                name: "caracteristica",
+                widget: "string",
+              },
+            ],
+        }
+      - {
+          label: "Imagen",
+          name: "image",
+          widget: "image",
+          media_folder: "/static/images/edificios",
+        }
+      - { label: "Descripción", name: "body", widget: "markdown" }
